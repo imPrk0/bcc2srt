@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Prk" />
+        <title>".bcc" to ".srt"</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1>".bcc"&nbsp;to&nbsp;".srt"</h1>
+            <textarea id="input" placeholder="Input"></textarea>
+            <textarea id="output" placeholder="Output"></textarea>
+            <button onclick="stb();">srt&nbsp;=>&nbsp;bcc</button>
+            <button onclick="bts();">bcc&nbsp;=>&nbsp;srt</button>
+        </div>
+        <script type="text/javascript" src="./script.js"></script>
+        <script type="text/javascript">
+            function stb() {
+                document.getElementById('output').value = convertSRTToBCC(document.getElementById('output').value);
+            }
+            function bts() {
+                document.getElementById('output').value = convertBCCToSRT(document.getElementById('input').value);
+            }
+        </script>
+    </body>
+</html>
