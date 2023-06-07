@@ -14,10 +14,10 @@
             <button onclick="stb();">srt&nbsp;=>&nbsp;bcc</button>
             <button onclick="bts();">bcc&nbsp;=>&nbsp;srt</button>
         </div>
-        <script type="text/javascript" src="./script.js"></script>
+        <script type="text/javascript" src="./bcc2srt.min.js"></script>
         <script type="text/javascript">
             function stb() {
-                document.getElementById('output').value = convertSRTToBCC(document.getElementById('output').value);
+                document.getElementById('output').value = convertSRTToBCC(document.getElementById('input').value);
             }
             function bts() {
                 document.getElementById('output').value = convertBCCToSRT(document.getElementById('input').value);
